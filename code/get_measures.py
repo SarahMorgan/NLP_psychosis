@@ -24,7 +24,7 @@ from tangent_meas import *
 from spider_plot import *
 
 # import file that contains participant's speech excerpt:
-speechfilename = 'c:\\Users\\sem91\\Documents\\GitHub\\NLP_psychosis\\examples\\speech_example2.txt'
+speechfilename = 'c:\\Users\\sem91\\Documents\\GitHub\\NLP_psychosis\\examples\\speech_example1.txt'
 speechfile = open(speechfilename, 'rt')
 speechtext = speechfile.read()
 speechfile.close()
@@ -57,5 +57,5 @@ s_vec=np.array([36,4,3.6,0.2337,0.5482,-0.0758,0.2929])
 e_vec=np.array([194,21,38.5,0.6824,1,0.0294,0.5424])
 
 # plot spider plot:
-output_file='c:\\Users\\sem91\\Documents\\GitHub\\NLP_psychosis\\examples\\spider_result2.png' # filename for output spider plot
+output_file='c:\\Users\\sem91\\Documents\\GitHub\\NLP_psychosis\\examples\\spider_result1.png' # filename for output spider plot
 plot_spider(result,s_vec,e_vec,spoke_titles,output_file)
