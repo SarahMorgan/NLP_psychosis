@@ -26,4 +26,4 @@ To calculate tangentiality and the on-topic score, you need a 'ground truth' tex
 
 This code is designed for use with speech excerpts in English, and would need to be adapted before use with other languages.
 
-Note that in the paper above we also calcualted speech graph measures and ambiguous pronoun code, for which code by other authors is already openly available here: http://neuro.ufrn.br/softwares/speechgraphs ([Mota et al 2012](https://doi.org/10.1371/journal.pone.0034928) and [Mota et al 2014](https://doi.org/10.1038/srep03691)) and here: https://github.com/kentonl/e2e-coref [Lee et al 2017](https://arxiv.org/abs/1707.07045).
+Note that in the paper above we also calcualted speech graph measures and ambiguous pronoun code, for which code by other authors is already openly available here: http://neuro.ufrn.br/softwares/speechgraphs ([Mota et al 2012](https://doi.org/10.1371/journal.pone.0034928) and [Mota et al 2014](https://doi.org/10.1038/srep03691)) and here: https://github.com/kentonl/e2e-coref ([Lee et al 2017](https://arxiv.org/abs/1707.07045)).
