@@ -10,7 +10,7 @@ The code is written for Python 3 and can be found in the 'code' folder.
 
 Briefly, the scripts have the following functions:
 
-- 'get_meas.py' is the main script, which calls the other scripts listed below to calculate the NLP measures and plot the results as a spider plot.
+- 'get_measures.py' is the main script, which calls the other scripts listed below to calculate the NLP measures and plot the results as a spider plot.
 - 'basic_meas.py' calculates basic NLP measures (number of words, number of sentences and mean sentence length).
 - 'coh_meas.py' calculates semantic coherence and the maximum similarity (repetition) measure.
 - 'tangent_meas.py' calculates tangentiality and on-topic score.
@@ -21,6 +21,8 @@ Example speech excerpts and corresponding spider plots are given in the 'example
 ## Notes:
 
 Both 'coh_meas.py' and 'tangent_meas.py' rely on having access to a pre-downloaded word2vec model. I used a slim version of the pre-trained Google News word2vec model, which can be downloaded here: https://github.com/eyaler/word2vec-slim. You will need to update 'coh_meas.py' and 'tangent_meas.py' with the correct path to this model on your computer.
+
+Demo of 'get_measures.py' relies on speech excerpt in folder 'examples'. You will need to update 'get_measures.py'with the correct path to the examples folder on your computer. To calculate the measures for other data, replace path to example speech excerpt in line 27 of 'get_measures.py' with path to the data.
 
 To calculate tangentiality and the on-topic score, you need a 'ground truth' text to compare the speech excerpt to (see Morgan et al 2021 for full details). In Morgan et al 2021, since our speech excerpts were descriptions of pictures from the Thematic Apperception Test (Murray et al, 1943), we used ground-truth descriptions of the TAT pictures, taken from: https://www.psychestudy.com/general/personality/detailed-procedure-thematic-procedure-test. These descriptions are provided in the folder 'examples/TAT' for reference. If using different stimuli (e.g. different pictures), you could substitute these descriptions for something else. However, please note that for the code to work correctly, the ground truth description text must be exactly 1 sentence long (not longer), and contain at least one word present in the word2vec model.
 
